@@ -1,0 +1,40 @@
+//Display all account details
+//Search by account number
+//Function to deposit
+//Function to withdraw
+
+public void deposit()
+{
+long amount;
+System.out.println("Enter the amount ");
+amount = sc.nextLong();
+balance = balance+amount;
+}
+
+//Function to withdraw
+public void withdraw()
+{
+long amt;
+System.out.println("Enter the amount you want to withdraw!");
+amt = sc.nextLong();
+
+if(balance >= amt)
+{
+balance = balance-amt;
+System.out.println("Balance after withdrawal :" +balance);
+}
+else
+{
+System.out.println("Your balance is less than" +amt + "Transaction could not completed");
+}
+}
+
+public boolean search(String accno)
+{
+if(accno.equals(accno)) {
+displayAccountDetails();
+return true;
+}
+return false;
+}
+}
